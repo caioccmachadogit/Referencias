@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.Random;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
@@ -109,6 +110,7 @@ import com.htcom.padrao.utills.CriarDirExterno;
 		 alertDialogBuilder.setMessage("Confirma Exclusão?");
 		 // set positive button: Yes message
 		 alertDialogBuilder.setPositiveButton("Sim",new DialogInterface.OnClickListener() {
+				@Override
 				public void onClick(DialogInterface dialog,int id) {
 					// Confirma exclusão
 					File file = new File(path);
@@ -122,6 +124,7 @@ import com.htcom.padrao.utills.CriarDirExterno;
 			  });
 		 // set negative button: No message
 		 alertDialogBuilder.setNegativeButton("Não",new DialogInterface.OnClickListener() {
+				@Override
 				public void onClick(DialogInterface dialog,int id) {
 					// cancel the alert box and put a Toast to the user
 					dialog.cancel();
@@ -166,7 +169,8 @@ import com.htcom.padrao.utills.CriarDirExterno;
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		try {
-			if (requestCode == CAPTURE_VIDEO_ACTIVITY_REQUEST_CODE && resultCode == getActivity().RESULT_OK) {
+			getActivity();
+			if (requestCode == CAPTURE_VIDEO_ACTIVITY_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
 				if (!file.exists()) {
 					file.mkdirs();
 				}
@@ -196,6 +200,7 @@ import com.htcom.padrao.utills.CriarDirExterno;
 	}
 	
 	
+	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	      switch (item.getItemId()) {
 	         // Respond to the action bar's Up/Home button

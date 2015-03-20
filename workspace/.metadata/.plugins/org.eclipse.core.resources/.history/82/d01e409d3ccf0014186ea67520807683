@@ -1,0 +1,109 @@
+package com.example.referencias_android.gps;
+
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.location.Location;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.provider.Settings;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.refencias_android.main.MainActivity;
+import com.example.referencias_android.model.Colaborador;
+
+public class GPSActivity extends Activity {
+	
+	@SuppressLint("NewApi") @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setTitle(R.string.gps_title);
+		setContentView(R.layout.gps_view);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+		ObterLocalizacao();
+	}
+	
+	public void btn_refresh(View view) {
+		ObterLocalizacao();
+
+	}
+
+	private void ObterLocalizacao() {
+		GPSUtills gpsUtills = new GPSUtills();
+		// ADQUIRI UMA REFERÊNCIA PARA O SISTEMA DE LOCALIZAÇÃO
+		gpsUtills.setLocationManager((LocationManager) getSystemService(Context.LOCATION_SERVICE));
+		// LIGA O GPS CASO ESTEJA DESATIVADO
+		gpsUtills.VerificarGPS(this);
+		if (gpsUtills.RegistrarGPSCriteria()) {
+			Location location = gpsUtills.getlocation;
+			TextView lat = (TextView) findViewById(R.id.txtLatitude);
+			lat.setText(String.valueOf(location.getLatitude()));
+			TextView lon = (TextView) findViewById(R.id.txtLongitude);
+			lon.setText(String.valueOf(location.getLongitude()));
+			Toast.makeText(this, "Localização Recebida! via "+gpsUtills.provider, Toast.LENGTH_SHORT).show();
+			gpsUtills.RemoveUpdates();
+			
+		} else {
+			openAlertConfirma();
+		}
+	}
+
+	private void openAlertConfirma() {
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+
+		alertDialogBuilder.setTitle(this.getTitle() + " Atenção");
+		alertDialogBuilder
+				.setMessage("Não foi possível obter a localização, verifique seu GPS!");
+		// set positive button: Yes message
+		alertDialogBuilder.setPositiveButton("Ok",
+				new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int id) {
+						// Confirma exclusão
+						Intent intent = new Intent(
+								Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+						startActivityForResult(intent, 1);
+					}
+				});
+		// set negative button: No message
+		alertDialogBuilder.setNegativeButton("Cancela",
+				new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int id) {
+						// cancel the alert box and put a Toast to the user
+						dialog.cancel();
+						finish();
+					}
+				});
+		AlertDialog alertDialog = alertDialogBuilder.create();
+		// show alert
+		alertDialog.show();
+	}
+
+	@Override
+	   public boolean onOptionsItemSelected(MenuItem item) {
+	      switch (item.getItemId()) {
+	         // Respond to the action bar's Up/Home button
+	         case android.R.id.home:
+				Intent i = new Intent();
+				Colaborador colaborador = new Colaborador();
+				colaborador.setNome("Desenvolvimento 3");
+				i.setClass(GPSActivity.this, MainActivity.class);
+				Bundle b = new Bundle();
+				b.putSerializable("Colaborador", colaborador);
+				i.putExtras(b);
+				i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+				startActivity(i);
+				break;
+	      }
+	      return true;
+	   }
+	
+}

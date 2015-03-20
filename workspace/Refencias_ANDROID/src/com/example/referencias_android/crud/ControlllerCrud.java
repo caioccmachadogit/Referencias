@@ -2,16 +2,13 @@ package com.example.referencias_android.crud;
 
 import java.util.ArrayList;
 
-import com.example.referencias_android.model.Crud;
 import com.example.referencias_android.utills.GerenciadorDB;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.sax.StartElementListener;
 import android.util.Log;
 import android.widget.EditText;
-import android.widget.ListView;
 
 public class ControlllerCrud {
 	private DAOCrud dao = null;

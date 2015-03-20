@@ -66,6 +66,7 @@ public class GPSActivity extends Activity {
 		// set positive button: Yes message
 		alertDialogBuilder.setPositiveButton("Ok",
 				new DialogInterface.OnClickListener() {
+					@Override
 					public void onClick(DialogInterface dialog, int id) {
 						// Confirma exclusão
 						Intent intent = new Intent(
@@ -76,6 +77,7 @@ public class GPSActivity extends Activity {
 		// set negative button: No message
 		alertDialogBuilder.setNegativeButton("Cancela",
 				new DialogInterface.OnClickListener() {
+					@Override
 					public void onClick(DialogInterface dialog, int id) {
 						// cancel the alert box and put a Toast to the user
 						dialog.cancel();

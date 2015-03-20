@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -19,7 +18,6 @@ import android.widget.Toast;
 
 import com.example.refencias_android.R;
 import com.example.refencias_android.main.MainActivity;
-import com.example.referencias_android.login.LoginActivity;
 import com.example.referencias_android.model.Colaborador;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB) public class ListCrudActivity extends Activity implements SearchView.OnQueryTextListener{
@@ -84,6 +82,7 @@ import com.example.referencias_android.model.Colaborador;
 		 alertDialogBuilder.setMessage("Confirma Exclusão?");
 		 // set positive button: Yes message
 		 alertDialogBuilder.setPositiveButton("Sim",new DialogInterface.OnClickListener() {
+				@Override
 				public void onClick(DialogInterface dialog,int id) {
 					// Confirma exclusão
 					if(controller.Deletar(_ID) == 1){
@@ -99,6 +98,7 @@ import com.example.referencias_android.model.Colaborador;
 			  });
 		 // set negative button: No message
 		 alertDialogBuilder.setNegativeButton("Não",new DialogInterface.OnClickListener() {
+				@Override
 				public void onClick(DialogInterface dialog,int id) {
 					// cancel the alert box and put a Toast to the user
 					dialog.cancel();

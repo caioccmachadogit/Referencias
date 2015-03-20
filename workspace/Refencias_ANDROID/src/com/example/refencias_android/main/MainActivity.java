@@ -12,7 +12,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
-import android.view.Menu; 
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -65,11 +65,13 @@ public class MainActivity extends Activity {
 		mDrawerToggle = new ActionBarDrawerToggle(this, menuUtills.mDrawerLayout,
 				R.drawable.ic_drawer, R.string.drawer_open,
 				R.string.drawer_close) {
+			@Override
 			public void onDrawerClosed(View view) {
 				getActionBar().setTitle(mTitle);
 				invalidateOptionsMenu(); // creates call to
 											// onPrepareOptionsMenu()
 			}
+			@Override
 			public void onDrawerOpened(View drawerView) {
 				getActionBar().setTitle(mDrawerTitle);
 				invalidateOptionsMenu(); // creates call to

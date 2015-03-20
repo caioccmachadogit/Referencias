@@ -1,16 +1,15 @@
 package com.example.refencias_android.main;
 
-import com.example.refencias_android.R;
-import com.example.referencias_android.crud.ListCrudActivity;
-import com.example.referencias_android.model.Colaborador;
-import com.htcom.padrao.utills.SharedPreferencesUtills;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.example.refencias_android.R;
+import com.example.referencias_android.model.Colaborador;
+import com.htcom.padrao.utills.SharedPreferencesUtills;
 
 public class SharedPrefActivity extends Activity{
 	

@@ -17,7 +17,6 @@ import com.example.refencias_android.main.MainActivity;
 import com.example.refencias_android.main.SharedPrefActivity;
 import com.example.referencias_android.login.AsyncLogin.AsyncResponse;
 import com.example.referencias_android.model.Colaborador;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.htcom.padrao.funcoes.Mascaras;
