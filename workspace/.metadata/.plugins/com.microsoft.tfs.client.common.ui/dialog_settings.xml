@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.connect.ServerListDialog">
+		<item value="1" key="VIEWS"/>
+		<item value="83" key="DIALOG_ORIGIN_Y"/>
+		<item value="438" key="DIALOG_ORIGIN_X"/>
+		<item value="736" key="DIALOG_WIDTH"/>
+		<item value="11/12/14 16:33:31" key="SINCE"/>
+		<item value="62026" key="ACCUMULATED_OPEN_TIME"/>
+		<item value="361" key="DIALOG_HEIGHT"/>
+		<item value="1" key="TIME_COUNTS"/>
+	</section>
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.vc.CheckinDialog">
+		<item value="14" key="VIEWS"/>
+		<item value="79" key="DIALOG_ORIGIN_Y"/>
+		<item value="346" key="DIALOG_ORIGIN_X"/>
+		<item value="674" key="DIALOG_WIDTH"/>
+		<item value="11/12/14 16:38:50" key="SINCE"/>
+		<item value="310393" key="ACCUMULATED_OPEN_TIME"/>
+		<item value="428" key="DIALOG_HEIGHT"/>
+		<item value="14" key="TIME_COUNTS"/>
+	</section>
+	<section name="wizard-ShareWizard">
+	</section>
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.vc.UndoPendingChangesDialog">
+		<item value="1" key="VIEWS"/>
+		<item value="138" key="DIALOG_ORIGIN_Y"/>
+		<item value="439" key="DIALOG_ORIGIN_X"/>
+		<item value="488" key="DIALOG_WIDTH"/>
+		<item value="12/09/14 12:09:26" key="SINCE"/>
+		<item value="1802" key="ACCUMULATED_OPEN_TIME"/>
+		<item value="340" key="DIALOG_HEIGHT"/>
+		<item value="1" key="TIME_COUNTS"/>
+	</section>
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.connect.ACSCredentialsDialog">
+		<item value="4" key="VIEWS"/>
+		<item value="0" key="DIALOG_ORIGIN_Y"/>
+		<item value="562" key="DIALOG_ORIGIN_X"/>
+		<item value="576" key="DIALOG_WIDTH"/>
+		<item value="11/12/14 16:33:46" key="SINCE"/>
+		<item value="27921" key="ACCUMULATED_OPEN_TIME"/>
+		<item value="629" key="DIALOG_HEIGHT"/>
+		<item value="4" key="TIME_COUNTS"/>
+	</section>
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.connect.AddServerDialog">
+		<item value="1" key="VIEWS"/>
+		<item value="54" key="DIALOG_ORIGIN_Y"/>
+		<item value="556" key="DIALOG_ORIGIN_X"/>
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="11/12/14 16:33:33" key="SINCE"/>
+		<item value="57608" key="ACCUMULATED_OPEN_TIME"/>
+		<item value="314" key="DIALOG_HEIGHT"/>
+		<item value="1" key="TIME_COUNTS"/>
+	</section>
+</section>

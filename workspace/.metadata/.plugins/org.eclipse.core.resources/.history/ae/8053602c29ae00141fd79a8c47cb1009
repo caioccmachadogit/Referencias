@@ -1,0 +1,120 @@
+package com.example.gps;
+
+import java.text.SimpleDateFormat;
+import java.util.List;
+
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.location.LocationProvider;
+import android.net.Uri;
+import android.os.Bundle;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class PosicaoUnicaActivity extends Activity {
+	
+public static LocationManager locationManager;
+	
+	@SuppressLint("NewApi") @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_posicao_unica);
+
+		
+		LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE); 
+
+		List<String> lstAllProviders = locationManager.getAllProviders(); // lista de todos os providers
+		List<String> lstProviders = locationManager.getProviders(false); // lista de todos os providers
+		
+		Criteria criteria = new Criteria();
+		String provider = locationManager.getBestProvider(criteria, false); // retorna o melhor provider escolhido com os parametros de criteria
+		
+		locationManager.requestSingleUpdate(provider, new LocationListener() {
+			
+			
+			@Override
+			public void onStatusChanged(String arg0, int arg1, Bundle arg2) {
+				Toast.makeText(getApplicationContext(), "Status alterado", Toast.LENGTH_LONG).show();				
+			}
+			
+			@Override
+			public void onProviderEnabled(String arg0) {
+				Toast.makeText(getApplicationContext(), "Provider Habilitado", Toast.LENGTH_LONG).show();
+				
+			}
+			
+			@Override
+			public void onProviderDisabled(String arg0) {
+				Toast.makeText(getApplicationContext(), "Provider Desabilitado", Toast.LENGTH_LONG).show();
+				
+				try {
+					Intent intent = new Intent();
+					intent.setClassName("com.android.settings", "com.android.settings.widget.SettingsAppWidgetProvider");
+					intent.addCategory(Intent.CATEGORY_ALTERNATIVE);
+					intent.setData(Uri.parse("3"));
+					getApplicationContext().sendBroadcast(intent);
+				}
+				catch (Exception e) {
+					Toast.makeText(getApplicationContext(), "Problemas em Habilitar Provider", Toast.LENGTH_LONG).show();
+				}
+			}
+			
+			
+			@Override
+			public void onLocationChanged(Location location) {
+				TextView latitude = (TextView) findViewById( R.id.latitude);
+				TextView longitude = (TextView) findViewById( R.id.longitude);
+				TextView time = (TextView) findViewById( R.id.time);
+				TextView acuracy = (TextView) findViewById( R.id.Acuracy);
+				TextView provider = (TextView) findViewById( R.id.provider);
+				
+				if( location != null ){
+					Log.i("GPS","location ok");
+					latitude.setText( "Latitude: "+location.getLatitude() );
+					longitude.setText( "Longitude: "+location.getLongitude() );
+					acuracy.setText( "Precisão: "+location.getAccuracy()+"" );
+					
+					SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+					time.setText( "Data:"+sdf.format( location.getTime() ) );
+					provider.setText( location.getProvider());
+				}
+				
+			}
+		}, null );
+	}
+	
+	private void ligaDesligaGPS(Context context) throws Exception{
+		try {
+			Intent intent = new Intent();
+			intent.setClassName("com.android.settings", "com.android.settings.widget.SettingsAppWidgetProvider");
+			intent.addCategory(Intent.CATEGORY_ALTERNATIVE);
+			intent.setData(Uri.parse("3"));
+			context.sendBroadcast(intent);
+		}
+		catch (Exception e) {
+			throw e;
+		}
+	}
+	
+	public void VerificarGPS(Context context){
+		try {
+			// LIGA O GPS CASO ESTEJA DESATIVADO
+			if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) ) {
+				ligaDesligaGPS(context);
+			}
+		}
+		catch (Exception e) {
+			Log.e("ERROR LIGARGPS" , e.getMessage());
+		}
+	}
+
+}

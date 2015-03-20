@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.htcom.padrao.utills.ConvertBitmap&apos; to &apos;BitmapUtills&apos;&#x0D;&#x0A;- Original project: &apos;Padrao&apos;&#x0D;&#x0A;- Original element: &apos;com.htcom.padrao.utills.ConvertBitmap&apos;&#x0D;&#x0A;- Renamed element: &apos;com.htcom.padrao.utills.BitmapUtills&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ConvertBitmap&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.htcom.padrao.utills{ConvertBitmap.java[ConvertBitmap" matchStrategy="1" name="BitmapUtills" qualified="false" references="true" similarDeclarations="false" stamp="1415101986127" textual="false" version="1.0"/>
+</session>

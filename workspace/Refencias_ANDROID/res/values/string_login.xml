@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_progress_signing_in">Aguarde Verificando Dados!&#8230;</string>
+    <string name="prompt_Cpf">Digite Aqui seu CPF!</string>
+    <string name="action_sign_in_register"><b>Entrar</b> </string>
+</resources>

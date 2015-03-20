@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ConfigureProjectWizard">
+		<item value="com.microsoft.tfs.client.eclipse.ui.wizard.sharewizard.ShareWizard" key="selectedWizardId"/>
+	</section>
+</section>

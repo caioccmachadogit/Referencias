@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.htcom.padrao.utills.GPSUtills.locationManager&apos; in &apos;com.htcom.padrao.utills.GPSUtills&apos;&#x0D;&#x0A;- Original project: &apos;Padrao&apos;&#x0D;&#x0A;- Original element: &apos;com.htcom.padrao.utills.GPSUtills.locationManager&apos;&#x0D;&#x0A;- Getter method name: &apos;getLocationManager&apos;&#x0D;&#x0A;- Setter method name: &apos;setLocationManager&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;locationManager&apos;" flags="589830" getter="getLocationManager" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;com.htcom.padrao.utills{GPSUtills.java[GPSUtills^locationManager" insertion="-1" setter="setLocationManager" stamp="1414758919041" version="1.0" visibility="1"/>
+</session>
