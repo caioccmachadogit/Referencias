@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cor_padrao_textView">#FFFFFF</color>
+    <color name="cor_padrao2_textView">#000000</color>
+    <color name="cor_semi_transparente">#3fff</color>
+</resources>

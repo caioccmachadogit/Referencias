@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="menu_settings">Settings</string>
+    <string name="geral_SalvarProsseguir">SALVAR E PROSSEGUIR</string>
+    <string name="geral_Salvar">Salvar</string>
+    <string name="geral_EnviaBkp">Por favor, aguarde, estamos realizando backup das suas informacoes...</string>
+    <string name="geral_tituloDialogs">Bosch DG</string>
+    <string name="geral_Cancelar">Cancelar</string>
+    <string name="geral_Atencao">Atenção!</string>
+    <string name="geral_Desculpe">Desculpe!</string>
+    <string name="geral_Data">Data</string>
+    <string name="geral_Observacao">Observação</string>
+    <string name="geral_Ok">OK</string>
+    <string name="geral_Sim">Sim</string>
+    <string name="geral_Nao">Não</string>
+    <string name="geral_AvisoConexao">Não há conexão com a internet, por favor verifique!</string>
+    <string name="geral_VerificandoServidor">Verificando status do servidor, por favor aguarde!</string>
+    <string name="geral_Sincronizacao">Sincronização</string>
+    <string name="geral_Atualizar">Atualizar</string>
+    <string name="geral_AtualizarVersao">A versão atual do sistema neste aparelho está desatualizada, por favor clique em "Sim" e siga os procedimentos para atualização!</string>
+    <string name="geral_Erro">Ocorreu um erro, neste procedimento.</string>
+    <string name="geral_RegistroSalvo">Registro salvo com sucesso!</string>
+    <string name="geral_BemVindo">Seja bem vindo ao mundo Compart! 
+        						  Este aplicativo foi desenvolvido especialmente para você utilizar no seu dia a dia de trabalho.
+        						  Na próxima tela toque em sincronizar para receber suas informações.
+        						  Caso tenha alguma dúvida, entre em contato com o Departamento de TI da Compart através do telefone (11) 4082-6744 </string>
+    <string name="geral_UsuarioInvalido">Id inválido, por favor verifique! Caso tenha alguma dúvida entre em contato com a Compart através do telefone (11) 4082-6744!</string>
+    <string name="todo">TODO</string>
+    <string name="instalar">Instalar</string>
+    <string name="abrir">Abrir</string>
+    <string name="instalarBotao">Esta imagem é apenas um exemplo.</string>
+    <string name="geral_Endereco">Endereço</string>
+    <string name="geral_Bairro">Bairro</string>
+    <string name="geral_Cidade">Cidade</string>
+    <string name="geral_RazaoSocial">Razao Social</string>
+    <string name="geral_NomeFantasia">Nome Fantasia</string>
+
+</resources>

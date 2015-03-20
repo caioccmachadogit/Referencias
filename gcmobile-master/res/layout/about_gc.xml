@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <!-- Account number -->
+    <TextView android:id="@android:id/empty"
+        android:text="Account Licence Number"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/accountNumber"  
+        android:text="@string/tf_unavailable"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />
+    
+    <!-- Account key -->
+    <TextView
+        android:id="@android:id/empty" 
+        android:text="Account Licence Key"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/accountKey"  
+        android:text="Unavailable"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />    
+        
+    <!-- Device email -->
+    <TextView
+        android:id="@android:id/empty" 
+        android:text="Device Registered To"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/deviceEmail"  
+        android:text="@string/tf_unavailable"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />
+        
+    <!-- Device PIN -->
+    <TextView
+        android:id="@android:id/empty" 
+        android:text="Device PIN"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/devicePin"  
+        android:text="@string/tf_unavailable"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />    
+
+    <TextView
+        android:id="@android:id/empty"  
+        android:text="Help, tutorials and more at\ngroupcomplete.com\n\nEmail us at\nsupport@groupcomplete.com"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:autoLink="all" />
+</LinearLayout>
+</ScrollView>

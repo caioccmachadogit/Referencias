@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	
+	
+		<TableRow >
+			<TextView android:text="ID" android:textSize="18px" android:id="@+id/textView1" android:layout_width="40px" android:layout_height="wrap_content"></TextView>
+			<TextView android:text="NOME" android:textSize="18px" android:id="@+id/textView2" android:layout_width="100px" android:layout_height="wrap_content"></TextView>
+			<TextView android:text="SALARIO" android:textSize="18px" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		</TableRow>
+    
+</TableLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.gilshapira.imagesss.test"
+	android:versionCode="1" android:versionName="1.0">
+
+	<instrumentation
+		android:targetPackage="com.gilshapira.imagesss"
+		android:name="android.test.InstrumentationTestRunner" />
+		
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	
+	<application>
+
+		<uses-library
+			android:name="android.test.runner" />
+			
+        <activity
+        	android:name=".ImagesssDemoActivity"
+        	android:label="Imagesss Test"
+        	android:stateNotNeeded="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+        </activity>
+        
+	</application>
+	
+</manifest>

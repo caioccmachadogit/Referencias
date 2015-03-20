@@ -1,0 +1,52 @@
+CHANGE LOG
+
+v1.4
+Bug fix:
+- The ImageReturnedFrom value now correctly indicates when an image is recovered from Disk or Network.
+
+v1.3
+API CHANGES:
+- BREAKING CHANGE: The import has changed for the Options object. This class now directly belongs to the ImageLoader class. If upgrading, please import Options from the new package.
+- BREAKING CHANGE: The ImagePrecacheAssistant is now more appropriately called the AdapterImagesAssistant. The pre cache interface has had its methods and requests changed slightly.
+- Legacy support has been added for most API changes.
+- ImageLoader objects are now created via ImageLoader.build...() methods rather than being directly constructed. Please change your ImageLoader construction to use these builder methods.
+- The ImageLoaderSupport and AbstractImageLoader classes have been deprecated. Apps should now only be using the ImageLoader and WidgetImageLoader classes, and both are created via the ImageLoader.build…() methods.
+- Some APIs have been deprecated. Please view the Javadoc associated with the deprecated calls and update to the newer APIs.
+
+New Features:
+- The image cache now spends ~90% less time on the UI thread when making requests (versus version 1.2).
+- Widgets are now supported. A WidgetImageLoader can now be constructed via the method ImageLoader.buildWidgetImageLoader(Object key, Context context).
+- The AdapterImagePrecacher is now available for use. This class helps manage what images need to be downloaded and precached, and it comes performance, battery life and data usage saving features. Helps to vastly smooth out adapter view scrolling. Please note there may be API changes on this class in the future.
+- Data usage, battery life and processing power savings! The image system now automatically cancels image requests for Activities and Fragments that have been destroyed without cancelling valid pending requests for the same URIs.
+- The image system automatically cancels requests on an image view if a new image is requested for that view.
+- Vastly improved prioritization logic. The image system actively distinguishes between on-screen image requests, pre cache requests, adapter requests, recently visited requests, and more. This is especially effective when used with the AdapterImagePrecacher. This ensures that images load on-screen in an optimal, logical order.
+- You can now fetch a bitmap from the image library without providing an ImageView.
+- Images can now be requested with an ImageRequest object. This API simplifies some of the logic involved when requesting images with complicated options, and may make API changes smoother in the future.
+- There is a new loadImage request that takes a listener without an Options object. This method will use the default options for its requests and report back to the listener when the request is complete.
+- Improved error messages coming from the disk system.
+
+Bug Fixes:
+- Fixed a crash caused by a ConcurrentModificationException.
+- Resolved a case where references to Activities or Fragments would be retained briefly after destruction.
+- FileFormatExceptions for file system images will now remove the details cache appropriately, and will no longer attempt to remove the image from disk.
+
+v1.2
+- XL Studio compatibility.
+
+v1.1.1
+- Critical bug fix: Bad comparator logic was causing a crash if images lingered in the disk cache for several weeks.
+
+v1.1.0
+- URIs can now refer to files on disk. These images will be cached in the memory cache.
+- A utility has been added called the ImagePrecacheAssistant. It can be used to rapidly implement precaching in adapters. Please note this is an early version that may undergo heavy API changes in the near future.
+- The SampleSize calculation code has been completely re-written. The image system now loads images significantly faster and uses less memory when large images are being loaded into smaller views.
+- A new option called "ScalingPreference" has been added. This option allows developers to choose what logic is used when scaling down images.
+- A new option called "preferedConfig" has been added. This option allows developers to change the pixel format of decoded bitmaps.
+- An API was added that allows developers to stub their own network libraries into the image system.
+- The ImageLoader Javadoc has been updated. The Javadoc comments should now more accurately describe the functionality of API calls.
+- Unit test coverage has been expanded.
+- Refactored some of the system's internals. Future patches should take less time to develop.
+- Bug fixes.
+
+v1.0.0
+- The image library is now stable.

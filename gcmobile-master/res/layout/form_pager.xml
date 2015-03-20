@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dip"       
+    android:layout_marginBottom="1dip"           
+    android:stretchColumns="1"        
+    android:weightSum="1.0">  
+                
+    <TableRow>
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"   
+            android:layout_weight=".33"     
+            android:drawableLeft="@drawable/previous_arrow_32"
+            android:textColor="@color/solid_black"            
+            android:text="" />
+            
+        <TextView
+            android:id="@+id/position"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight=".33"
+            android:text="" />            
+        
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"   
+            android:layout_weight=".33"         
+            android:drawableRight="@drawable/next_arrow_32"
+            android:textColor="@color/solid_black"            
+            android:text="" />
+    </TableRow>
+</TableLayout>

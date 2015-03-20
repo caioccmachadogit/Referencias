@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_tipo_pesquisa">
+        <item >@string/geral_RazaoSocial</item>
+        <item >@string/geral_NomeFantasia</item>
+        <item >@string/geral_Endereco</item>
+        <item >@string/geral_Bairro</item>
+        <item >@string/geral_Cidade</item>
+    </string-array>
+    
+    <string-array name="array_tipo_pesquisa_ocorrencia">
+        <item >@string/geral_Observacao</item>
+        <item >@string/geral_Data</item>
+    </string-array>
+</resources>

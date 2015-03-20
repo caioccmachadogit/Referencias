@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#005b9c"
+    >
+    
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:background="#05ae5b"
+        android:padding="5dp" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/im_voltar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="btn_close"
+                android:layout_marginTop="5dp"
+                android:background="@layout/bt_voltar"/>
+            <TextView
+	        android:id="@+id/tv_ligarmaq"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ligarmaq"
+	        android:layout_marginTop="7dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#fff" />
+        </TableRow>       
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_ligar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff" />
+
+</LinearLayout>

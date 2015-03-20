@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConsumerWSVpro</string>
+    <string name="action_settings">Settings</string>
+    <string name="logar">Enviar</string>
+    <string name="status">Status</string>
+    <string name="ligar">Ligar</string>
+    <string name="desligar">Desligar</string>
+    <string name="reiniciar">Reinciar</string>
+    <string name="bv">Bem Vindo - Técnico Virtual</string>
+    <string name="statusmaq">Status da Máquina: </string>
+    <string name="ligarmaq">Ligar Máquina: </string>
+    <string name="desligarmaq">Desligar Máquina: </string>
+    <string name="reiniciarmaq">Reiniciar Máquina: </string>
+	<string name="disco">Info Disco</string>
+	<string name="memoria">Info Memória</string>
+	<string name="processador">Info Processador</string>
+	<string name="bios">Info Bios</string>
+	<string name="maquina">Info Máquina</string>
+</resources>

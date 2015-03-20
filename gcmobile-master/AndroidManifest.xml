@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (C) 2009 University of Washington
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License. You may obtain a copy of
+the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations under 
+the License.
+-->
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:versionCode="14" 
+    android:versionName="1.2.9"
+    package="com.radicaldynamic.groupinform"
+    >
+  <!-- android:debuggable="true" -->
+  <application       
+      android:icon="@drawable/ic_group_complete" 
+      android:label="@string/app_name"
+      android:name=".application.Collect" 
+      android:theme="@style/GroupInformTheme">
+
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.AccountDeviceActivity" 
+        android:windowSoftInputMode="stateHidden" />
+        
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.AccountDeviceList" />
+        
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.AccountFolderActivity" 
+        android:windowSoftInputMode="stateHidden" />
+        
+    <activity 
+        android:label="@string/app_name"
+        android:name=".activities.AccountFolderList" />
+        
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.AccountFolderReplicationList" />
+        
+    <!-- Enable Shortcuts for Command Actions -->
+<!--    <activity-->
+<!--        android:name=".activities.AndroidShortcuts"-->
+<!--        android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+<!--        android:label="ODK Form">-->
+<!--      <intent-filter>-->
+<!--        <action android:name="android.intent.action.CREATE_SHORTCUT" />-->
+<!--        <category android:name="android.intent.category.DEFAULT" />-->
+<!--      </intent-filter>-->
+<!--    </activity>-->
+
+    <activity 
+        android:name=".activities.BrowserActivity" 
+        android:label="@string/app_name">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <action android:name="android.intent.action.EDIT" />
+        <action android:name="android.intent.action.PICK" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
+      </intent-filter>
+    </activity>
+
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.ClientInformationActivity" />
+        
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.ClientRegistrationActivity" 
+        android:noHistory="true" />
+        
+    <activity 
+        android:label="@string/app_name" 
+        android:name="com.radicaldynamic.gcmobile.android.activities.DataExportActivity" android:screenOrientation="portrait"/>
+        
+    <activity
+        android:label="@string/app_name"
+        android:name="com.radicaldynamic.gcmobile.android.activities.DataImportActivity" android:screenOrientation="portrait"/>
+    
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.FileDialog" />
+
+    <activity 
+        android:label="@string/app_name" 
+        android:name="com.radicaldynamic.gcmobile.android.build.FieldEditorActivity" 
+        android:windowSoftInputMode="stateHidden" />
+            
+    <activity 
+        android:label="@string/app_name"
+        android:name="com.radicaldynamic.gcmobile.android.build.FieldList" />        
+        
+    <activity 
+        android:label="@string/app_name"
+        android:name="com.radicaldynamic.gcmobile.android.build.I18nList" />
+
+    <activity 
+        android:label="@string/app_name"
+        android:name="com.radicaldynamic.gcmobile.android.build.InstanceList" />
+    
+    <activity 
+        android:label="@string/app_name"
+        android:name="com.radicaldynamic.gcmobile.android.build.LanguageList" />
+
+    <activity 
+        android:label="@string/app_name" 
+        android:name="com.radicaldynamic.gcmobile.android.build.SelectFieldImportActivity" android:screenOrientation="portrait"/>
+    
+    <activity 
+        android:label="@string/app_name" 
+        android:name="com.radicaldynamic.gcmobile.android.build.SelectFieldList" />
+        
+    <activity 
+        android:configChanges="orientation"
+        android:label="@string/app_name" 
+        android:name=".activities.FormEntryActivity" 
+        android:windowSoftInputMode="adjustResize"> 
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <action android:name="android.intent.action.EDIT" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="vnd.android.cursor.item/vnd.odk.form" />
+        <data android:mimeType="vnd.android.cursor.item/vnd.odk.instance" />
+      </intent-filter>
+    </activity>
+
+    <activity 
+        android:label="@string/app_name"
+        android:name=".activities.FormHierarchyActivity" />        
+                        
+    <activity 
+        android:label="@string/app_name" 
+        android:name=".activities.InstanceUploaderList" />
+        
+    <activity 
+        android:label="@string/app_name"
+        android:name=".activities.InstanceUploaderActivity" />                 
+        
+    <activity 
+        android:configChanges="orientation" 
+        android:label="@string/app_name" 
+        android:name=".activities.LauncherActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+        
+    <activity 
+        android:label="@string/app_name"
+        android:name=".activities.ODKActivityTab" />
+    
+    <activity 
+        android:label="@string/app_name"
+        android:name="com.radicaldynamic.gcmobile.android.preferences.PreferencesActivity" /> 
+
+    <activity
+        android:name=".activities.SplashScreenActivity"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Dialog">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+      </intent-filter>
+    </activity>
+
+    <uses-library
+        android:name="com.google.android.maps"
+        android:required="false" />
+
+    <service 
+        android:label="@string/app_name"
+        android:name=".services.DatabaseService"
+        android:exported="false" />
+    <service 
+        android:label="@string/app_name"
+        android:name=".services.InformOnlineService"
+        android:exported="false" />
+
+    <!-- CouchDB -->
+    <service 
+        android:name="com.couchbase.libcouch.CouchService" 
+        android:enabled="true" 
+        android:exported="false">
+    </service>
+    
+    <!-- Native ODK code -->
+    <activity
+        android:label="@string/app_name"
+        android:name="org.odk.collect.android.activities.AccountList" />
+    
+    <activity
+        android:label="@string/app_name"
+        android:name="org.odk.collect.android.activities.AccountInfo" />
+        
+    <activity 
+        android:label="@string/app_name" 
+        android:screenOrientation="landscape"
+        android:name="org.odk.collect.android.activities.DrawActivity" 
+        android:windowSoftInputMode="stateHidden" />    
+    
+    <activity 
+        android:label="@string/app_name"
+        android:name="org.odk.collect.android.activities.FormDownloadList" /> 
+
+    <activity 
+        android:label="@string/app_name"
+        android:name="org.odk.collect.android.activities.GeoPointActivity" />
+          
+    <activity 
+        android:label="@string/app_name"
+        android:name="org.odk.collect.android.activities.GeoPointMapActivity" />
+
+    <activity 
+        android:label="@string/app_name"
+        android:name="org.odk.collect.android.preferences.PreferencesActivity" /> 
+  </application>
+  
+  <uses-permission 
+      xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission 
+      xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission 
+      xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+  <uses-permission 
+      xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:name="android.permission.INTERNET" />
+  <uses-permission 
+      xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission 
+      xmlns:android="http://schemas.android.com/apk/res/android" 
+      android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  
+  <!-- See 669:1fe26128b71d -->
+  <uses-permission
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:name="android.permission.USE_CREDENTIALS" />
+  
+  <supports-screens 
+      android:anyDensity="true"
+      android:largeScreens="true"
+      android:normalScreens="true" 
+      android:resizeable="true"
+      android:smallScreens="true" />
+  
+  <!-- android:xlargeScreens="true"  -->
+
+  <uses-sdk 
+      android:minSdkVersion="8" 
+      android:maxSdkVersion="13"
+      android:targetSdkVersion="8" />
+</manifest>

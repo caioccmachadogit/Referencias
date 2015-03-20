@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_padrao">
+
+    <ScrollView
+        android:id="@+inst/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+inst/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+inst/textView1"
+                style="@style/textView_padrao"
+                android:layout_margin="10sp"
+                android:text="@string/geral_Atencao" />
+
+            <TextView
+                android:id="@+inst/textView5"
+                style="@style/textView_padrao"
+                android:layout_marginLeft="10sp"
+                android:text="@string/geral_Ok" />
+
+            <ImageButton
+                android:id="@+inst/ibInstalador1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10sp"
+                android:background="#0000"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_instalador" />
+
+            <TextView
+                android:id="@+inst/textView2"
+                style="@style/textView_padrao"
+                android:layout_margin="10sp"
+                android:text="@string/instalar" />
+
+            <ImageButton
+                android:id="@+inst/ibInstalador2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10sp"
+                android:background="#0000"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_instalador2" />
+
+            <TextView
+                android:id="@+inst/textView3"
+                style="@style/textView_padrao"
+                android:text="@string/abrir" />
+
+            <ImageButton
+                android:id="@+inst/ibInstalador3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10sp"
+                android:background="@android:color/black"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_instalador3" />
+
+            <TextView
+                android:id="@+inst/textView4"
+                style="@style/textView_padrao"
+                android:text="@string/instalarBotao" />
+
+            <Button
+                android:id="@+inst/btSalvar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instalar" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

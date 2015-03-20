@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/tv_tdisco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Disco:"
+        />
+    <TextView
+        android:id="@+id/tv_disco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tmodelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Modelo:"
+        />
+    <TextView
+        android:id="@+id/tv_modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tserial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Serial:"
+        />
+    <TextView
+        android:id="@+id/tv_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tcapacidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Capacidade:"
+        />
+    <TextView
+        android:id="@+id/tv_capacidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+
+</LinearLayout>

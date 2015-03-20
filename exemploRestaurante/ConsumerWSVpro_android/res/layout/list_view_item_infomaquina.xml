@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    
+    
+    <TextView
+        android:id="@+id/tv_tmodelomaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Modelo:"
+        />
+    <TextView
+        android:id="@+id/tv_modelomaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tfabricantemaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Fabricante:"
+        />
+    <TextView
+        android:id="@+id/tv_fabricantemaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tversaomaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Versão:"
+        />
+    <TextView
+        android:id="@+id/tv_versaomaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tserialmaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Serial:"
+        />
+    <TextView
+        android:id="@+id/tv_serialmaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+
+</LinearLayout>

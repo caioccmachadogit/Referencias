@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:actionButtonStyle"
+    android:id="@+lay_actionbar_botao_cancelar/actionbar_cancelar"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <TextView style="?android:actionBarTabTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/ic_cancelar_branco"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/geral_Cancelar" 
+        android:textColor="@android:color/white"
+        android:textSize="12sp"        />
+</FrameLayout>

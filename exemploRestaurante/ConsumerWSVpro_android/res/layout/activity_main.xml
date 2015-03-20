@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="5dp" >
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_scopus"
+        android:layout_marginTop="100dp" />
+
+    
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center" 
+        android:background="#005b9c">
+	    <TableRow
+	        android:id="@+id/tableRow1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textAlignment="center"
+	         >
+	        <EditText
+	            android:id="@+id/login"
+	            android:layout_width="215dp"
+	            android:layout_height="53dp"
+	            android:background="#05ae5b"
+	            android:inputType="text"
+	            android:text="adminsist"
+	            android:textColor="#fff"
+	            android:paddingLeft="5dp"
+	            android:textSize="15sp" >
+	        </EditText>
+
+	        <Button
+	            android:id="@+id/btnLogar"
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:background="@layout/bt_login"
+	            android:onClick="btn_envocar_login"
+	             />
+
+	    </TableRow>
+	</TableLayout>
+
+
+
+</LinearLayout>

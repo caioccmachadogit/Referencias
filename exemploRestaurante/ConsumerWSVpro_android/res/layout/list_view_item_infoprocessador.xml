@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    
+    <TextView
+        android:id="@+id/tv_tfabricante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Fabricante:"
+        />
+    <TextView
+        android:id="@+id/tv_fabricantep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tversao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Versão:"
+        />
+    <TextView
+        android:id="@+id/tv_versaop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tcapacidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Capacidade:"
+        />
+    <TextView
+        android:id="@+id/tv_capacidadep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_tcapacidademax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:text="Capacidade Máx:"
+        />
+    <TextView
+        android:id="@+id/tv_capacidademaxp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:padding="5dp"
+        />
+    
+    
+
+</LinearLayout>

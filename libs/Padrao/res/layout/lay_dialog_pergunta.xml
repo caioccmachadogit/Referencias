@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:background="#EBEBEB"  >
+    
+    <TextView 
+        android:id="@+lay_dialog_pergunta/txtPergunta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/cor_padrao2_textView"/>
+    
+    <EditText 
+        android:id="@+lay_dialog_pergunta/edtPergunta"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:inputType="textMultiLine" 
+        android:layout_margin="5dp"
+        android:background="@android:drawable/editbox_background_normal" />
+    
+     <Button 
+        android:id="@+lay_dialog_pergunta/btnPergunta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default" 
+        android:layout_margin="5dp"
+        android:text="@string/geral_Salvar"/>
+    
+
+</LinearLayout>

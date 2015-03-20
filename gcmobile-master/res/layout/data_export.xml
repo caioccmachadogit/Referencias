@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <TextView 
+        android:id="@android:id/empty"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="3dp"
+        android:text="Select Records To Export"
+        android:textAppearance="?android:attr/textAppearanceLarge" />        
+       
+    <CheckBox             
+        android:id="@+id/exportDraft"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Draft forms" />
+        
+    <CheckBox             
+        android:id="@+id/exportCompleted"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Completed forms" />        
+        
+    <TextView 
+        android:id="@android:id/empty"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="3dp"
+        android:paddingTop="10dp"
+        android:text="Export Destinations"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    <CheckBox             
+        android:id="@+id/outputExternal"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Save data to SD card" />
+        
+    <CheckBox
+        android:id="@+id/outputSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send data via email/Bluetooth" />
+        
+    <TextView 
+        android:id="@android:id/empty"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="3dp"
+        android:paddingTop="10dp"
+        android:text="Export Options"
+        android:textAppearance="?android:attr/textAppearanceLarge" />        
+        
+    <CheckBox             
+        android:id="@+id/outputZip"
+        android:enabled="false"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="ZIP exported data" />
+        
+    <CheckBox             
+        android:id="@+id/outputMediaFiles"
+        android:enabled="false"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Include media files" />
+        
+    <CheckBox             
+        android:id="@+id/outputXFormFiles"
+        android:enabled="false"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Include XForm files" />
+        
+    <CheckBox
+        android:id="@+id/outputRecordMetadata"
+        android:enabled="false"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="Include record metadata" />
+        
+    <Button
+        android:id="@+id/beginExport"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:text="Begin export" />
+</LinearLayout>
+</ScrollView>

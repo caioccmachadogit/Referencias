@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="270dp" >
+
+    <DatePicker
+        android:id="@+lay_dialog_date_picker/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:calendarViewShown="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+    
+    <Button 
+        android:id="@+lay_dialog_date_picker/btnSalvar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:text="@string/geral_Salvar"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
