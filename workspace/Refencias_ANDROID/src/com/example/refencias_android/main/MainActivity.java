@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
         /*if (savedInstanceState == null) {
 			SelectItem(0);
 		}*/
-    }
+    } 
     
   //==========PADRÃO PARA CRIAR MENU===============================
 
